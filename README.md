@@ -60,4 +60,4 @@ Rename `.env.example` to `.env.development` and update accordingly
 
 ### Contribute
 
-Please help us keep this starter up to date and adhering to best practices and conventions. We are not veterans in the space and appreciate any contributions or suggestions on how things can be done better. Feel free to raise an issue, pull request or reach out: *hello* at *whitebrick* dot *com*
+Please help us keep this starter up to date and adhering to best practices and conventions. We are not veterans in the space and appreciate any contributions or suggestions on how things can be done better. Feel free to submit an issue, pull request or reach out: *hello* at *whitebrick* dot *com*
