@@ -21,7 +21,7 @@ This starter uses:
 
 
 
-#### Hasura Configuration
+### Hasura Configuration
 
 1. Follow [instructions](https://hasura.io/docs/latest/graphql/core/getting-started/index/) to set up Hasura
 1. Create a simple table to store Organizations
@@ -38,13 +38,13 @@ This starter uses:
 
 
 
-#### Auth0 Configuration
+### Auth0 Configuration
 
 Follow [these steps](https://hasura.io/docs/latest/graphql/core/guides/integrations/auth0-jwt/) to set up Auth0 with custom claims for Hasura.
 
 
 
-#### ENV configuration
+### ENV configuration
 
 Rename `.env.example` to `.env.development` and update accordingly
 
@@ -58,6 +58,6 @@ Rename `.env.example` to `.env.development` and update accordingly
 
 
 
-#### Contribute
+### Contribute
 
 Please help us keep this starter up to date and adhering to best practices and conventions. We are not veterans in the space and appreciate any contributions or suggestions on how things can be done better. Feel free to raise an issue, pull request or reach out: *hello* at *whitebrick* dot *com*
