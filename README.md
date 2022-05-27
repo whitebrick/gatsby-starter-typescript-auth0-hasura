@@ -26,11 +26,11 @@ This starter uses:
 1. Follow [instructions](https://hasura.io/docs/latest/graphql/core/getting-started/index/) to set up Hasura
 1. Create a simple table to store Organizations
 ```sql
-	CREATE TABLE organizations(
+  CREATE TABLE organizations(
     id SERIAL PRIMARY KEY,
     name TEXT,
     label TEXT
-	);
+  );
 ```
 2. Track the table from the Hasura console *Data* tab
 2. Add a few test records from the Hasura console *Data* > *Insert Row* tab
