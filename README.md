@@ -48,13 +48,13 @@ Follow [these steps](https://hasura.io/docs/latest/graphql/core/guides/integrati
 
 Rename `.env.example` to `.env.development` and update accordingly
 
-| Property                  | Value                                               |
-| ------------------------- | --------------------------------------------------- |
-| GATSBY_HASURA_GRAPHQL_URL | eg. `https://hasura.example.com/v1/graphql`         |
-| GATSBY_AUTH0_DOMAIN       | eg. `<my-tenant-name>.us.auth0.com`                 |
-| GATSBY_AUTH0_CLIENT_ID    | eg. `T4WN7SBfeJ0BO6CFX2nw3k2yEECHOVMe`              |
-| GATSBY_AUTH0_REDIRECT_URI | eg. `http://localhost:8000`                         |
-| GATSBY_AUTH0_AUDIENCE     | eg. `https://<my-tenant-name>.us.auth0.com/api/v2/` |
+| Property                  | Example Value                                   |
+| ------------------------- | ----------------------------------------------- |
+| GATSBY_HASURA_GRAPHQL_URL | `https://hasura.example.com/v1/graphql`         |
+| GATSBY_AUTH0_DOMAIN       | `<my-tenant-name>.us.auth0.com`                 |
+| GATSBY_AUTH0_CLIENT_ID    | `T4WN7SBfeJ0BO6CFX2nw3k2yEECHOVMe`              |
+| GATSBY_AUTH0_REDIRECT_URI | `http://localhost:8000`                         |
+| GATSBY_AUTH0_AUDIENCE     | `https://<my-tenant-name>.us.auth0.com/api/v2/` |
 
 
 
