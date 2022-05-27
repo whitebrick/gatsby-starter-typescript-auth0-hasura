@@ -10,7 +10,7 @@ This starter provides a simple Gatsby Admin page that:
 
 The Admin page is styled with Bootstrap and is based on a slightly modified [Dashboard Component](https://getbootstrap.com/docs/5.2/examples/). "Organizations" are used as an example for listing and creating objects/records, all other nav links serve as display placeholders only.
 
-![Screenshot](/Users/simon/git/gatsby-starter-typescript-auth0-hasura/static/screenshot.png)
+![Screenshot](static/screenshot.png)
 
 This starter uses:
 
