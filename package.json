@@ -1,11 +1,10 @@
 {
-  "name": "wbip-client",
-  "version": "1.0.0",
-  "private": true,
-  "description": "wbip-client",
-  "author": "s1monj",
+  "name": "gatsby-starter-typescript-auth0-hasura",
+  "version": "0.0.1",
+  "description": "A Gatsby starter for authenticating via Auth0 and using the JWT with Hasura over GraphQL",
+  "author": "whitebrick",
   "keywords": [
-    "gatsby"
+    "gatsby","react","auth0","hasura","graphql"
   ],
   "scripts": {
     "develop": "gatsby develop",
@@ -24,7 +23,6 @@
     "graphql": "^15.8.0",
     "react": "^17.0.1",
     "react-bootstrap": "^2.4.0",
-    "react-bootstrap-icons": "^1.8.2",
     "react-dom": "^17.0.1",
     "react-feather": "^2.0.9",
     "react-helmet": "^6.1.0",
