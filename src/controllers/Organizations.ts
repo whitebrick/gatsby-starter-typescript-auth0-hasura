@@ -34,10 +34,10 @@ export const useOrganizations = () => {
   };
 };
 
-export const useAddOrganization = ({ name, label }) => {
-  const [{ data, fetching }, executeMutation] = useMutation(ADD_ORGANIZATION);
+export const useAddOrganization = () => {
+  const [state, executeMutation] = useMutation(ADD_ORGANIZATION);
   return {
-    organization: data?.insert_organizations_one,
-    loading: fetching,
+    state,
+    executeMutation,
   };
 };
