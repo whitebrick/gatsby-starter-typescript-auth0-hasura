@@ -11,7 +11,7 @@ import {
   Operation,
 } from "urql";
 
-interface UrqlClientProps {
+interface UrqlProviderProps {
   children: React.ReactChildren;
 }
 
@@ -37,7 +37,7 @@ const fetchOptionsExchange =
     );
   };
 
-const UrqlClient = ({ children }: UrqlClientProps) => {
+const UrqlProvider = ({ children }: UrqlProviderProps) => {
   const { getAccessTokenSilently, getIdTokenClaims } = useAuth0();
 
   const url = process.env.GATSBY_HASURA_GRAPHQL_URL;
@@ -70,10 +70,10 @@ const UrqlClient = ({ children }: UrqlClientProps) => {
       ],
     });
   } else {
-    throw new Error("url not define");
+    throw new Error("UrqlProvider: url not defined");
   }
 
   return <Provider value={client}>{children}</Provider>;
 };
 
-export default UrqlClient;
+export default UrqlProvider;

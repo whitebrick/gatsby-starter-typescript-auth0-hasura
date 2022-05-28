@@ -1,4 +1,3 @@
-import React from "react";
 import { useQuery, useMutation } from "urql";
 
 const GET_ORGANIZATIONS = `

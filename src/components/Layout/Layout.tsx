@@ -23,6 +23,7 @@ const Layout: React.FC = ({ children }) => {
       <Helmet>
         <meta charSet="utf-8" />
       </Helmet>
+      {/* Bootstrap Dashboard example component https://getbootstrap.com/docs/5.2/examples/ */}
       <header className="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
         <a className="navbar-brand col-md-3 col-lg-2 me-0 p-3 fs-6" href="#">
           Company name

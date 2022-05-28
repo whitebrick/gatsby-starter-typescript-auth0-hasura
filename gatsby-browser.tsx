@@ -1,6 +1,6 @@
 import React from "react"
 import { Auth0Provider } from "@auth0/auth0-react"
-import UrqlClient from "./src/api/UrqlClient"
+import UrqlProvider from "./src/api/UrqlProvider"
 import Layout from "./src/components/Layout/Layout"
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -18,7 +18,7 @@ export const wrapRootElement = ({ element }) => {
       useRefreshTokens
       cacheLocation="localstorage"
     >
-      <UrqlClient>{element}</UrqlClient>
+      <UrqlProvider>{element}</UrqlProvider>
     </Auth0Provider>
   );
 }

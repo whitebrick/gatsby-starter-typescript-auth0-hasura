@@ -11,9 +11,8 @@ const AddOrganization = () => {
     const variables = { name, label };
     executeMutation(variables).then((result) => {
       if (result.error) {
-        console.log("Someting went wrong", result.error);
+        console.log("executeMutation error:", result.error);
       }
-
       setName("");
       setLabel("");
     });
@@ -45,7 +44,7 @@ const AddOrganization = () => {
           onClick={handleSubmit}
           disabled={state.fetching}
         >
-          {!state.fetching ? "Submit" : "Submittin...."}
+          {!state.fetching ? "Add" : "Adding..."}
         </button>
       </div>
     </div>
