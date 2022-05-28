@@ -27,7 +27,7 @@ const AddOrganization = () => {
           value={name}
           onChange={(e) => setName(e.target.value)}
           type="text"
-          placeholder="New Organization Name"
+          placeholder="Organization Name"
         />
       </div>
       <div className="col-2">
@@ -36,7 +36,7 @@ const AddOrganization = () => {
           value={label}
           onChange={(e) => setLabel(e.target.value)}
           type="text"
-          placeholder="New Organization Label"
+          placeholder="Organization Label"
         />
       </div>
       <div className="col-2">

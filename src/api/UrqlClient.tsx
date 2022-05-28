@@ -11,7 +11,7 @@ import {
   Operation,
 } from "urql";
 
-interface AuthApolloProviderProps {
+interface UrqlClientProps {
   children: React.ReactChildren;
 }
 
@@ -37,7 +37,7 @@ const fetchOptionsExchange =
     );
   };
 
-const AuthApolloProvider = ({ children }: AuthApolloProviderProps) => {
+const UrqlClient = ({ children }: UrqlClientProps) => {
   const { getAccessTokenSilently, getIdTokenClaims } = useAuth0();
 
   const url = process.env.GATSBY_HASURA_GRAPHQL_URL;
@@ -76,4 +76,4 @@ const AuthApolloProvider = ({ children }: AuthApolloProviderProps) => {
   return <Provider value={client}>{children}</Provider>;
 };
 
-export default AuthApolloProvider;
+export default UrqlClient;
