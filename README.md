@@ -1,5 +1,5 @@
 # gatsby-starter-typescript-auth0-hasura
-##### A Gatsby starter for authenticating via Auth0 and using the JWT with Hasura over GraphQL
+##### A Gatsby starter in TypeScript for authenticating via Auth0 and using the JWT with Hasura over GraphQL
 
 Although there are plenty of Gatsby+Hasura and Gatsby+Auth0 tutorials out there, at the time of writing all were out of date and using old patterns with deprecated libraries.
 
