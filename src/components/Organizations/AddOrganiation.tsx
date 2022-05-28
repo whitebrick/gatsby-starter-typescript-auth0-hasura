@@ -1,18 +1,23 @@
 import React from "react";
 import { useAddOrganization } from "../../controllers/Organizations";
 
-// const postMutation = React.useCallback(() => {
-//   executeMutation({ url, description }).then(() => {
-//     props.history.push("/new/1");
-//   });
-// }, [url, description, executeMutation, props.history]
-// });
-
 const AddOrganization = () => {
+  const { state, executeMutation } = useAddOrganization();
+
   const [name, setName] = React.useState("");
   const [label, setLabel] = React.useState("");
 
-  // const { organizations, loading } = useAddOrganization();
+  const handleSubmit = () => {
+    const variables = { name, label };
+    executeMutation(variables).then((result) => {
+      if (result.error) {
+        console.log("Someting went wrong", result.error);
+      }
+
+      setName("");
+      setLabel("");
+    });
+  };
 
   return (
     <div className="row">
@@ -35,9 +40,12 @@ const AddOrganization = () => {
         />
       </div>
       <div className="col-2">
-        <button class="btn btn-success">
-          {/*<button disabled={state.fetching} onClick={postMutation}>*/}
-          Add
+        <button
+          className="btn btn-success"
+          onClick={handleSubmit}
+          disabled={state.fetching}
+        >
+          {!state.fetching ? "Submit" : "Submittin...."}
         </button>
       </div>
     </div>

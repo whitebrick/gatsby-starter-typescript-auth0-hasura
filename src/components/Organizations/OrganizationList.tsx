@@ -1,10 +1,11 @@
-import React, { useContext } from "react";
+import React from "react";
 import OrganizationItem from "./OrganizationItem";
 import { useOrganizations } from "../../controllers/Organizations";
 import { OrganizationItemType } from "../../types";
 
 const OrganizationList = () => {
   const { organizations, loading } = useOrganizations();
+
   return (
     <div className="table-responsive">
       <table className="table table-striped table-sm">
